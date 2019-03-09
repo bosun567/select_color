@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=100px, initial-scale=1">
+<style>
+
+#red {
+  width: 40px;
+  padding: 50px 0;
+  text-align: center;
+  background-color: red;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+#blue {
+  width: 40px;
+  padding: 50px 0;
+  text-align: center;
+  background-color: blue;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+</style>
+</head>
+<body>
+
+<button onclick="myFunctionred()">Red</button>
+<button onclick="myFunctionblue()">Blue</button><br>
+
+<div id="red">Red</div><div id="blue">Blue</div>
+
+
+<script>
+function myFunctionred() {
+  var x = document.getElementById("red");
+  var y = document.getElementById("blue");
+    x.style.display = "block";
+    y.style.display = "none";
+}
+function myFunctionblue() {
+  var x = document.getElementById("red");
+  var y = document.getElementById("blue");
+    x.style.display = "none";
+    y.style.display = "block";
+}
+</script>
+
+</body>
+</html>
